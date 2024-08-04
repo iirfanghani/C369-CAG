@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Insurance Details</title>
+    <link rel="stylesheet" href="insurance.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#"><img src="images/logo.png" alt="Ghaninsur" width="215" height="35"></a>
+        <nav class="navbar">
+            <a href="insurance.html">Insurance</a>
+            <a href="claims.html">Claims</a>
+            <a href="contact.html">Contact</a>
+            <a href="index.html"><button class="btnLogin-popup">Login</button></a>
+        </nav>
+    </header>
+    
+    <div class="payment-form-container">
+        <form class="payment-form" action="transaction.html">
+            <h2>Add Payment Information</h2>
+            <div class="input-group">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" placeholder="1234 1234 1234 1234" required>
+            </div>
+            <div class="input-group row">
+                <div class="column">
+                    <label for="expiry-date">Expiration Date:</label>
+                    <input type="text" id="expiry-date" placeholder="MM/YY" required>
+                </div>
+                <div class="column">
+                    <label for="cvc">Security Code:</label>
+                    <input type="text" id="cvc" placeholder="CVC" required>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="country">Country:</label>
+                <select id="country">
+                    <option value="singapore">Singapore</option>
+                    <!-- Add more options here -->
+                </select>
+            </div>
+            <p class="disclaimer">
+                By providing your card information, you allow Ghaninsur to charge your card for future payments in accordance with their terms.
+            </p>
+            <div class="buttons">
+                <button type="button" class="cancel-button" onclick="location.href='review.html'">Cancel</button>
+                <button type="submit" class="pay-button">Pay $88.88</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

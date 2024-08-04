@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Insurance Details</title>
+    <link rel="stylesheet" href="others.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#"><img src="images/logo.png" alt="Ghaninsur" width="215" height="35"></a>
+        <nav class="navbar">
+            <a href="insurance.html">Insurance</a>
+            <a href="claims.html">Claims</a>
+            <a href="contact.html">Contact</a>
+            <a href="index.html"><button class="btnLogin-popup">Login</button></a>
+        </nav>
+    </header>
+    <div class="flex-container">
+        <div class="flex-row">
+            <h1 class="contact-h1">NEED HELP?</h1>
+        </div>
+        <div class="flex-row">
+            <p class="contact-p">Drop us a message and our friendly team <br> will get back to you as soon as possible !</p>
+        </div>
+    </div>
+        <div class="contact-container">
+            <div class="contact-form-container">
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <label for="dob">Email:</label>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <label for="dob">Phone Number:</label>
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                    <label for="category">Category:</label>
+                    <select name="category" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="general">General Enquiry</option>
+                        <option value="Insurance">Policy Enquiry</option>
+                        <option value="Claims">Claims Enquiry</option>
+                    </select>
+                    <label for="message">Tell us what the matter is:</label>
+                    <textarea name="message" placeholder="Tell us what the matter is" rows="4" required></textarea>
+                    <div>
+                        <input type="checkbox" name="consent" required>
+                        <label>By submitting this form, you can confirm that you have read, understood and given your consent to our <a href="#">Privacy Policy</a> and <a href="#">Terms and Conditions</a></label>
+                    </div>
+                    <button type="submit">SEND MESSAGE</button>
+                </form>
+                <script>
+                    document.getElementById('contactForm').addEventListener('submit', function(event) {
+                        event.preventDefault(); 
+                        alert('Thank you for the message! You will be redirected shortly.');
+                        window.location.href = 'insurance.html'; 
+                    });
+                </script>
+            </div>
+        </div>
+    </body>
+    </html>

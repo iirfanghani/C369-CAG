@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Insurance Details</title>
+    <link rel="stylesheet" href="insurance.css">
+</head>
+<body>
+    <header class="header">
+        
+        <a href="#"><img src="images/logo.png" alt="Ghaninsur" width="215" height="35"></a>
+        <nav class="navbar">
+            <a href="insurance.html">Insurance</a>
+            <a href="claims.html">Claims</a>
+            <a href="contact.html">Contact</a>
+            <a href="index.html"><button class="btnLogin-popup">Login</button></a>
+        </nav>
+    </header>
+    <section id="enhancedInsuranceDetails" class="review-details">
+        <form class="enhanced-details-form">
+            <h2>Review & Pay</h2>
+            <p>Please review and ensure all your information below is accurate before proceeding to pay.</p>
+            <div class="form-row">
+                <div class="enhanced-form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Irfan Ghani Bin" disabled>
+                </div>
+                <div class="enhanced-form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Kaslan" disabled>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="enhanced-form-group">
+                    <label for="identificationNumber">Identification Number:</label>
+                    <input type="text" id="identificationNumber" name="identificationNumber" placeholder="T0492785G" disabled>
+                </div>
+                <div class="enhanced-form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" disabled>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="enhanced-form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="text" id="dob" name="dob" placeholder="27/02/2004" disabled>
+                </div>
+                <div class="enhanced-form-group">
+                    <label for="maritalStatus">Marital Status:</label>
+                    <select id="maritalStatus" name="maritalStatus" disabled>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="enhanced-form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" placeholder="9 Woodlands Ave 9, Singapore" disabled>
+                </div>
+                <div class="enhanced-form-group">
+                    <label for="postalCode">Postal Code:</label>
+                    <input type="text" id="postalCode" name="postalCode" placeholder="738964" disabled>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="enhanced-form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="irfanghani2704@icloud.com" disabled>
+                </div>
+                <div class="enhanced-form-group">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="88943057" disabled>
+                </div>
+            </div>
+        </form>
+        <div class="costBreakdownContainer">
+            <div class="costBreakdown">
+                <h3>Price Breakdown:</h3>
+                <p>Selected Plan: Travel "Premium" Cover</p>
+                <p class="planCost">Price: $88.88</p>
+                <p class="additionalFees">Additional Fees: $0.00</p>
+                <p class="totalCost">Total Price: $88.88 (incl. of 9% GST)</p>
+            </div>
+        </div>
+        <a href="payment.html" class="enhanced-submit-btn">Continue to payment</a>
+    </section>
+</body>
+</html>

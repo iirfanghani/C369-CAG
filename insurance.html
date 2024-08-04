@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghaninsur</title>
+    <link rel="stylesheet" href="insurance.css">
+</head>
+<body class="insurance-body">
+    <header class="header">
+        <a href="#"><img src="images/logo.png" alt="Ghaninsur" width="215" height="35"></a>
+        <nav class="navbar">
+            <a href="insurance.html">Insurance</a>
+            <a href="claims.html">Claims</a>
+            <a href="contact.html">Contact</a>
+            <a href="index.html"><button class="btnLogin-popup">Login</button></a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="text">
+            <h1>STAY PROTECTED & EASE THE PAIN</h1>
+            <p>Get your custom coverage with us now!</p>
+        </div>
+        <form class="form" action="plans.html">
+          <label for="cover">I would like to cover:</label>
+          <select id="cover">
+            <option value="">Select an option</option>
+            <option value="option1">Myself only</option>
+            <option value="option2">My Partner and I</option>
+            <option value="option3">My Childern and I</option>
+            <option value="option3">My Family and I</option>
+          </select>
+    
+          <label for="type">Type:</label>
+          <select id="type">
+            <option value="">Type of insurance</option>
+            <option value="type1">Travel</option>
+            <option value="type2">Car</option>
+            <option value="type3">Health</option>
+          </select>
+
+          <label for="occupation">Budget:</label>
+          <input type="text" id="occupation" name="occupation" placeholder="Enter your budget" required>
+
+          <label for="dateRange">Date Range:</label>
+          <input type="text" id="dateRange" name="dateRange" placeholder="MM/DD/YYYY - MM/DD/YYYY" required>
+
+          <button class="button" type="submit">GET INSTANT QUOTE</button>
+        </form>
+        <div class="terms">
+          By proceeding, you agree to our <a href="#">Terms of Use</a>, <a href="#">Privacy Policy</a> and
+          <a href="#">Partner Privacy Statement</a>.
+        </div>
+    </div>
+</body>
+</html>
